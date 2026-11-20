@@ -11,7 +11,7 @@ Official PyTorch implementation for **Multimodal Sentiment Analysis with Chain-o
 
 | Model | Has0_Acc2 | Has0_F1 | Non0_Acc2 | Non0_F1 | Corr |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| Early Fusion (LFDNN) | 79.01% | 75.59% | 80.03% | 75.87% | 0.6946 |
+| Early Fusion (EF-DNN) | 79.01% | 75.59% | 80.03% | 75.87% | 0.6946 |
 | Early Fusion + CoT | 79.74% | 75.83% | 81.55% | 77.30% | 0.6823 |
 | Late Fusion (LF-DNN) | 77.26% | 73.47% | 78.66% | 74.26% | 0.6513 |
 | Late Fusion + CoT (PEAR-CoT + CMFF) | 79.88% | 74.91% | 82.01% | 76.86% | 0.6895 |
