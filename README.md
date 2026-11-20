@@ -22,6 +22,15 @@ Official PyTorch implementation for **Multimodal Sentiment Analysis with Chain-o
 
 ![Acc-2 Comparison](results/acc2_comparison_paper.png)
 ![F1 Comparison](results/f1_comparison_paper.png)
+## Qualitative Case Studies on CMU-MOSI (Test Set)
+
+Examples where the baseline **Hybrid CENET** misclassifies sentiment polarity due to sarcasm, quantitative scoring, or idioms, and our **Hybrid CENET + CoT** successfully calibrates the prediction:
+
+| ID | Utterance | $I_{\text{audio}}$ | $I_{\text{vision}}$ | $\hat{y}_{\text{CENET}}$ | $\hat{y}_{\text{CoT}}$ | $\hat{y}_{\text{final}}$ | $y_{\text{true}}$ |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **#18** | *"HE UM HAD ALL THE CHARM OF A NARCISSIST..."* | 0.105 | 0.032 | +1.07 | -2.00 | **-0.98** | -2.80 |
+| **#122** | *"SO SEASON OF THE WITCH IS RATED 3 OUT OF 10"* | 0.071 | 0.017 | +1.56 | -2.00 | **-0.83** | -2.50 |
+| **#43** | *"AND OH OH MY GOSH I WAS BLOWN AWAY"* | 0.048 | 0.017 | -1.69 | +2.00 | **+0.99** | +2.80 |
 
 ## Repository Structure
 
