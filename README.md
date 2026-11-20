@@ -22,6 +22,10 @@ Official PyTorch implementation for **Multimodal Sentiment Analysis with Chain-o
 
 ![Acc-2 Comparison](results/acc2_comparison_paper.png)
 ![F1 Comparison](results/f1_comparison_paper.png)
+![Beta Sensitivity](results/fig3_beta_sensitivity.png)
+![Grid Search Heatmap](results/fig3b_grid_search_heatmap.png)
+![Accuracy by Sentiment Intensity](results/fig4_accuracy_by_sentiment_intensity.png)
+
 ## Qualitative Case Studies on CMU-MOSI (Test Set)
 
 Examples where the baseline **Hybrid CENET** misclassifies sentiment polarity due to sarcasm, quantitative scoring, or idioms, and our **Hybrid CENET + CoT** successfully calibrates the prediction:
@@ -48,7 +52,7 @@ CMU-MOSI-Multimodal-CoT/
 │   └── evaluate.py
 ├── notebooks/
 │   └── CMU_MOSI_Multimodal_CoT.ipynb
-└── results/
+└── └── results/
     ├── predictions/
     ├── contrastive_cot_validation_results.csv
     ├── paper_5_metrics_results.csv
@@ -56,7 +60,14 @@ CMU-MOSI-Multimodal-CoT/
     ├── acc2_comparison_paper.png
     ├── acc2_comparison_paper.pdf
     ├── f1_comparison_paper.png
-    └── f1_comparison_paper.pdf
+    ├── f1_comparison_paper.pdf
+    ├── fig3_beta_sensitivity.png
+    ├── fig3_beta_sensitivity.pdf
+    ├── fig3b_grid_search_heatmap.png
+    ├── fig3b_grid_search_heatmap.pdf
+    ├── fig4_accuracy_by_sentiment_intensity.png
+    └── fig4_accuracy_by_sentiment_intensity.pdf
+
 ```
 
 ## Quick Start
