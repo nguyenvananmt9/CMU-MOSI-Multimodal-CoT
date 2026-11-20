@@ -18,8 +18,8 @@ class TemporalAttention(nn.Module):
         weights = torch.softmax(self.attention(x.float()).squeeze(-1), dim=1)
         return torch.sum(x.float() * weights.unsqueeze(-1), dim=1)
 
-# 1. Early Fusion (LFDNN)
-class LFDNN(nn.Module):
+# 1. Early Fusion (EFDNN)
+class EFDNN(nn.Module):
     def __init__(self):
         super().__init__()
         self.text_net = nn.Sequential(nn.Linear(768, 128), nn.ReLU(), nn.Dropout(0.2))
