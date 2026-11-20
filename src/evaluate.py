@@ -3,7 +3,7 @@ from utils import *
 SAVE_DIR = './results/predictions'
 
 methods_map = [
-    ("Early Fusion (LFDNN)",      f"{SAVE_DIR}/early_fusion_predictions.npz"),
+    ("Early Fusion (EF-DNN)",      f"{SAVE_DIR}/early_fusion_predictions.npz"),
     ("Early Fusion + CoT",        f"{SAVE_DIR}/early_fusion_cot_predictions.npz"),
     ("Late Fusion (LF-DNN)",      f"{SAVE_DIR}/late_fusion_predictions.npz"),
     ("Late Fusion + CoT",         f"{SAVE_DIR}/pear_cot_cmff_optimized_predictions.npz"),
