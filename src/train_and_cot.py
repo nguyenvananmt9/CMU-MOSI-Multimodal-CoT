@@ -52,11 +52,11 @@ def train_simple_baseline(model, name, train_loader, valid_loader, test_loader, 
     print(f"=> {name} finished | Best Val MAE: {best_loss:.4f}\n")
     return best_loss
 
-# 3.1 Train Early Fusion (LFDNN)
+# 3.1 Train Early Fusion (EF-DNN)
 set_seed(1115, deterministic=False)
 train_loader, valid_loader, test_loader = get_feature_loaders(data, batch_size=128, seed=1115, use_generator=True)
-early_model = LFDNN().to(device)
-train_simple_baseline(early_model, "Early Fusion (LFDNN)", train_loader, valid_loader, test_loader, f"{SAVE_DIR}/early_fusion_predictions.npz", patience=10)
+early_model = EF-DNN().to(device)
+train_simple_baseline(early_model, "Early Fusion (EF-DNN)", train_loader, valid_loader, test_loader, f"{SAVE_DIR}/early_fusion_predictions.npz", patience=10)
 
 # 3.2 Train Late Fusion (LF-DNN)
 late_model = LateFusionModel().to(device)
